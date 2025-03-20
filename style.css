@@ -10,7 +10,7 @@ nav {
     justify-content: space-around;
     position: sticky;
     top: 0;
-    margin-bottom: 2000px;
+    margin-bottom: 30px;
 }
 nav ul {
     background-color: #333;
@@ -27,9 +27,51 @@ nav ul li a {
     padding: 8px 15px;
     display: block;
     font-size: 18px;
-    padding: 20px 20px;
+    padding: 5px 20px;
 }
 nav ul li a:hover {
     background-color: rgba(209, 209, 209, 0.4); 
 
+}
+/* Page Desciption*/
+#page-description{
+    margin:auto;
+}
+.page-heading{
+    text-align: center;
+}
+#page-section-text{
+    text-indent: 40px;
+    width: 75%;
+    margin:auto;
+}
+
+/*Sections*/
+.section{
+    margin: 20px;
+}
+.section-heading{
+    text-align: center;
+
+}
+.section-content{
+    display: flex; 
+    align-items: center;
+}
+.section-text{
+    width: 50%;
+    height: 300px;
+    margin: 2%;
+    text-indent: 40px;
+    display: flex;
+    align-content: center;
+    background-color: aquamarine;
+    
+
+
+}
+.section-image{
+    width: 400px;
+    height: 300px;
+    margin: 2%;
 }
