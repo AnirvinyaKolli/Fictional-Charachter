@@ -1,10 +1,21 @@
 body, html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    background-color: #D2996C;
+}
+
+@font-face {
+    font-family: 'FancyTitle';
+    src: url('fonts/CloisterBlack.ttf');
+}
+@font-face {
+    font-family: 'paragraphFont';
+    src: url('fonts/Foglihten-068.otf');
 }
 
 nav {
-    background-color: #333;
+    background-color: #5c3821;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -13,7 +24,7 @@ nav {
     margin-bottom: 30px;
 }
 nav ul {
-    background-color: #333;
+    background-color: #5c3821;
     list-style-type:none;
     display: flex;
     width: 100%;        
@@ -22,7 +33,7 @@ nav ul li {
     margin: 10px;
 }
 nav ul li a {
-    color: #ccc; 
+    color: #d8834ebb; 
     text-decoration: none;
     padding: 8px 15px;
     display: block;
@@ -30,25 +41,30 @@ nav ul li a {
     padding: 5px 20px;
 }
 nav ul li a:hover {
-    background-color: rgba(209, 209, 209, 0.4); 
+    background-color: #e79e706b; 
 
 }
 /* Page Desciption*/
-#page-description{
+#page-description-container{
     margin:auto;
 }
 .page-heading{
     text-align: center;
+    font-family: 'FancyTitle';
 }
 #page-section-text{
     text-indent: 40px;
     width: 75%;
     margin:auto;
+    font-family: 'paragraphFont';
 }
 
 /*Sections*/
-.section{
+.section-container{
+    scroll-margin-top: 300px;  
     margin: 20px;
+    height: 400px;
+    align-items: center;
 }
 .section-heading{
     text-align: center;
@@ -57,6 +73,7 @@ nav ul li a:hover {
 .section-content{
     display: flex; 
     align-items: center;
+    background-color: #8E4B32;
 }
 .section-text{
     width: 50%;
@@ -65,13 +82,21 @@ nav ul li a:hover {
     text-indent: 40px;
     display: flex;
     align-content: center;
-    background-color: aquamarine;
     
 
 
 }
 .section-image{
-    width: 400px;
+    width: 50%;
     height: 300px;
     margin: 2%;
+}
+
+.section-link{
+    text-align: center;
+}
+
+#appearance{
+    margin-bottom: 600px;
+
 }
